@@ -108,7 +108,7 @@ $organization = "yourOrganization"
 $project = "yourProject"              
 $repositoryName = "yourRepositoryName"  
 $buildPipelineName = "yourBuildPipeline" 
-$refName = "refs/heads/main"            
+$refName = "refs/heads/master"            
 $pat = "yourPersonalAccessToken"       
 
 
