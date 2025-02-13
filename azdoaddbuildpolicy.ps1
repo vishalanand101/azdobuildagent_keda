@@ -66,7 +66,7 @@ function Add-BuildValidationPolicy {
         [string]$pat
     )
 
-    
+    $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($pat)"))
     $repositoryId = Get-RepositoryId -organization $organization -project $project -repositoryName $repositoryName -pat $pat
     if (-not $repositoryId) { return }
 
